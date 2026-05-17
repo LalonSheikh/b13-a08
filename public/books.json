@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent River",
+    "author": "Ayesha Rahman",
+    "description": "A mysterious journey along a river that hides ancient secrets.",
+    "category": "Story",
+    "available_quantity": 8,
+    "image_url": "https://picsum.photos/seed/silent-river/600/900"
+  },
+  {
+    "id": 2,
+    "title": "Future of AI",
+    "author": "John Carter",
+    "description": "An in-depth exploration of artificial intelligence and its future impact.",
+    "category": "Tech",
+    "available_quantity": 15,
+    "image_url": "https://picsum.photos/seed/future-ai/600/900"
+  },
+  {
+    "id": 3,
+    "title": "Quantum Wonders",
+    "author": "Dr. Emily Stone",
+    "description": "Understanding quantum physics made simple and fascinating.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://picsum.photos/seed/quantum-wonders/600/900"
+  },
+  {
+    "id": 4,
+    "title": "Broken Dreams",
+    "author": "Mahfuz Alam",
+    "description": "A heartfelt story of struggle, hope, and redemption.",
+    "category": "Story",
+    "available_quantity": 10,
+    "image_url": "https://picsum.photos/seed/broken-dreams/600/900"
+  },
+  {
+    "id": 5,
+    "title": "Mastering JavaScript",
+    "author": "David Miller",
+    "description": "A complete guide to modern JavaScript development.",
+    "category": "Tech",
+    "available_quantity": 20,
+    "image_url": "https://picsum.photos/seed/javascript/600/900"
+  },
+  {
+    "id": 6,
+    "title": "Space and Beyond",
+    "author": "Neil Armstrong Jr.",
+    "description": "A journey through galaxies, stars, and cosmic mysteries.",
+    "category": "Science",
+    "available_quantity": 9,
+    "image_url": "https://picsum.photos/seed/space/600/900"
+  },
+  {
+    "id": 7,
+    "title": "The Last Village",
+    "author": "Rafiq Hasan",
+    "description": "A touching story of a disappearing rural village.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://picsum.photos/seed/last-village/600/900"
+  },
+  {
+    "id": 8,
+    "title": "Node.js in Depth",
+    "author": "Sarah Lee",
+    "description": "Advanced concepts of backend development using Node.js.",
+    "category": "Tech",
+    "available_quantity": 12,
+    "image_url": "https://picsum.photos/seed/nodejs/600/900"
+  },
+  {
+    "id": 9,
+    "title": "The Human Genome",
+    "author": "Dr. Robert Kim",
+    "description": "Exploring the blueprint of human life through genetics.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "https://picsum.photos/seed/genome/600/900"
+  },
+  {
+    "id": 10,
+    "title": "Whispers of Time",
+    "author": "Nadia Islam",
+    "description": "A poetic story about memories and lost time.",
+    "category": "Story",
+    "available_quantity": 11,
+    "image_url": "https://picsum.photos/seed/time/600/900"
+  },
+  {
+    "id": 11,
+    "title": "Cloud Computing Basics",
+    "author": "Michael Brown",
+    "description": "Introduction to cloud services and infrastructure.",
+    "category": "Tech",
+    "available_quantity": 18,
+    "image_url": "https://picsum.photos/seed/cloud/600/900"
+  },
+  {
+    "id": 12,
+    "title": "Earth's Climate System",
+    "author": "Dr. Lisa Green",
+    "description": "Understanding climate change and environmental science.",
+    "category": "Science",
+    "available_quantity": 14,
+    "image_url": "https://picsum.photos/seed/climate/600/900"
+  }
+]
