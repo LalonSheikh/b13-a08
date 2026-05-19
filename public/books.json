@@ -6,7 +6,7 @@
     "description": "A mysterious journey along a river that hides ancient secrets.",
     "category": "Story",
     "available_quantity": 8,
-    "image_url": "https://picsum.photos/seed/silent-river/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "An in-depth exploration of artificial intelligence and its future impact.",
     "category": "Tech",
     "available_quantity": 15,
-    "image_url": "https://picsum.photos/seed/future-ai/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "Understanding quantum physics made simple and fascinating.",
     "category": "Science",
     "available_quantity": 6,
-    "image_url": "https://picsum.photos/seed/quantum-wonders/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "A heartfelt story of struggle, hope, and redemption.",
     "category": "Story",
     "available_quantity": 10,
-    "image_url": "https://picsum.photos/seed/broken-dreams/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "A complete guide to modern JavaScript development.",
     "category": "Tech",
     "available_quantity": 20,
-    "image_url": "https://picsum.photos/seed/javascript/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "A journey through galaxies, stars, and cosmic mysteries.",
     "category": "Science",
     "available_quantity": 9,
-    "image_url": "https://picsum.photos/seed/space/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "A touching story of a disappearing rural village.",
     "category": "Story",
     "available_quantity": 5,
-    "image_url": "https://picsum.photos/seed/last-village/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "Advanced concepts of backend development using Node.js.",
     "category": "Tech",
     "available_quantity": 12,
-    "image_url": "https://picsum.photos/seed/nodejs/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "Exploring the blueprint of human life through genetics.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "https://picsum.photos/seed/genome/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "description": "A poetic story about memories and lost time.",
     "category": "Story",
     "available_quantity": 11,
-    "image_url": "https://picsum.photos/seed/time/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "description": "Introduction to cloud services and infrastructure.",
     "category": "Tech",
     "available_quantity": 18,
-    "image_url": "https://picsum.photos/seed/cloud/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   },
   {
     "id": 12,
@@ -105,6 +105,6 @@
     "description": "Understanding climate change and environmental science.",
     "category": "Science",
     "available_quantity": 14,
-    "image_url": "https://picsum.photos/seed/climate/600/900"
+    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
   }
 ]
