@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent River",
+    "author": "Christopher C Curtis",
+    "description": "A mysterious journey along a river that hides ancient secrets.",
+    "category": "Story",
+    "available_quantity": 8,
+    "image_url": "https://i.ibb.co/ZzkKnJvJ/the-Silent-River.webp"
+  },
+  {
+    "id": 2,
+    "title": "Future of AI",
+    "author": "Andreah Barker",
+    "description": "An in-depth exploration of artificial intelligence and its future impact.",
+    "category": "Tech",
+    "available_quantity": 15,
+    "image_url": "https://i.ibb.co/pjHhbDC6/future-Of-AI.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Quantum Wonders",
+    "author": "TailoredRead AI",
+    "description": "Understanding quantum physics made simple and fascinating.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://i.ibb.co/SwQFSWpg/quantum-Wonders.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Broken Dreams",
+    "author": "Kelly Elliott",
+    "description": "A heartfelt story of struggle, hope, and redemption.",
+    "category": "Story",
+    "available_quantity": 10,
+    "image_url": "https://i.ibb.co/Cshnm1Qx/Broken-Dreams.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Mastering JavaScript",
+    "author": "Ne0 D. Truman",
+    "description": "A complete guide to modern JavaScript development.",
+    "category": "Tech",
+    "available_quantity": 20,
+    "image_url": "https://i.ibb.co/4Rd2kfSL/javascript-Mastering.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Space and Beyond",
+    "author": " B. N. Suresh",
+    "description": "A journey through galaxies, stars, and cosmic mysteries.",
+    "category": "Science",
+    "available_quantity": 9,
+    "image_url": "https://i.ibb.co/prNx2shh/Space-And-Beyond.jpg"
+  },
+  {
+    "id": 7,
+    "title": "The Last Village",
+    "author": " Audla English",
+    "description": "A touching story of a disappearing rural village.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co/cf7WG19/the-Last-Village.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Node.js in Depth",
+    "author": "Sarah Lee",
+    "description": "Advanced concepts of backend development using Node.js.",
+    "category": "Tech",
+    "available_quantity": 12,
+    "image_url": "https://i.ibb.co/YF2DpW0W/Node-Js.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Human Genome",
+    "author": "Carla Mooney",
+    "description": "Exploring the blueprint of human life through genetics.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "https://i.ibb.co/dwW0X0Jt/The-Human-Genom.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Whispers of Time",
+    "author": "Tony Goode",
+    "description": "A poetic story about memories and lost time.",
+    "category": "Story",
+    "available_quantity": 11,
+    "image_url": "https://i.ibb.co/gFydNqf9/whisper-Of-Time.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Cloud Computing Basics",
+    "author": "Anders Lisdorf",
+    "description": "Introduction to cloud services and infrastructure.",
+    "category": "Tech",
+    "available_quantity": 18,
+    "image_url": "https://i.ibb.co/GQ106qjy/Cloude-Computing-Basics.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Earth's Climate System",
+    "author": "Steven Earle",
+    "description": "Understanding climate change and environmental science.",
+    "category": "Science",
+    "available_quantity": 14,
+    "image_url": "https://i.ibb.co/60FqFp2p/Earth-Of-Climax.jpg"
+  }
+]
