@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
@@ -16,7 +17,10 @@ const Banner = () => {
             <p className="mb-5">
               Discover Stories, Fuel Your Imagination and Expand Your Knowledge.
             </p>
-            <button className="btn bg-orange-500 ">Browse Now</button>
+            <Link  href={"/allbooks"}>
+              {" "}
+              <button className="btn bg-orange-500 ">Browse Now</button>
+            </Link>
           </div>
         </div>
       </div>

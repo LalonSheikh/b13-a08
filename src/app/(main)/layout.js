@@ -4,7 +4,7 @@ import MarqueeBar from "@/shared/MarqueeBar";
 import Navbar from "@/shared/Navbar";
 import React from "react";
 
-const MainLayout = ({ children }) => {
+const AllBooksLayout = ({ children }) => {
   return (
     <div>
       <Navbar></Navbar>
@@ -16,4 +16,4 @@ const MainLayout = ({ children }) => {
   );
 };
 
-export default MainLayout;
+export default AllBooksLayout;
