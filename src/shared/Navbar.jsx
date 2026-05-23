@@ -45,7 +45,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">
             {links.map((link) => (
               <li key={link.path}>
-                <Link href={link.path}>{link.label}</Link>
+                <Link className="hover:bg-orange-400" href={link.path}>
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -61,10 +63,12 @@ const Navbar = () => {
       </div>
 
       <div className="collapse-content lg:hidden z-1">
-        <ul className="menu">
+        <ul className="menu ">
           {links.map((link) => (
             <li key={link.path}>
-              <Link href={link.path}>{link.label}</Link>
+              <Link className="hover:bg-orange-400" href={link.path}>
+                {link.label}
+              </Link>
             </li>
           ))}
         </ul>
