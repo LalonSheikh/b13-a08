@@ -1,9 +1,19 @@
+"use client";
+
+import { authClient } from "@/lib/auth-client";
+import userAvatar from "@/assets/user.png";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BiBookOpen } from "react-icons/bi";
 // import userAvatar from "@/assets/user.png";
 
 const Navbar = () => {
+  const { data: session, isPending } = authClient.useSession();
+  const user = session?.user;
+
+  console.log(user, "user");
+
   const links = [
     { path: "/", label: "Home" },
     { path: "/allbooks", label: "All Books" },
@@ -53,12 +63,36 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link
-            className="btn bg-orange-500 hover:bg-orange-300"
-            href={"/login"}
-          >
-            Login
-          </Link>
+          {isPending ? (
+            <span className="loading loading-spinner text-error"></span>
+          ) : user ? (
+            <div className="flex items-center gap-3">
+              <h2>Hello! {user.name}</h2>
+
+              {/* <Image
+                src={user?.image || userAvatar}
+                alt="user avatar"
+                width={60}
+                height={60}
+                className="rounded-full"
+              /> */}
+
+              <Link
+                className="btn bg-orange-500 hover:bg-orange-300"
+                href={"/logout"}
+                onClick={async()=>await authClient.signOut()}
+              >
+                Logout
+              </Link>
+            </div>
+          ) : (
+            <Link
+              className="btn bg-orange-500 hover:bg-orange-300"
+              href={"/login"}
+            >
+              Login
+            </Link>
+          )}
         </div>
       </div>
 
