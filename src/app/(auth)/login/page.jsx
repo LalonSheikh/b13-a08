@@ -25,7 +25,7 @@ const LoginPage = () => {
       callbackURL: "/",
     });
     
-    console.log(res, error);
+    // console.log(res, error);
   };
   // console.log(watch("email"), "errors");
   // console.log(watch("password"));
@@ -34,7 +34,7 @@ const LoginPage = () => {
     const data = await authClient.signIn.social({
       provider: "google",
     });
-    console.log(data, "data");
+    // console.log(data, "data");
   };
 
   return (

@@ -17,13 +17,13 @@ const RegisterPage = () => {
       const data = await authClient.signIn.social({
         provider: "google",
       });
-      console.log(data, "data");
+      // console.log(data, "data");
     };
 
   const handleRegister = async (data) => {
     const { name, photo, email, password } = data;
 
-    console.log(data);
+    // console.log(data);
 
     const { data: res, error } = await authClient.signUp.email({
       name: name,

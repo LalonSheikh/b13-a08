@@ -5,7 +5,7 @@ import React from "react";
 
 const HomePageBooks = async () => {
   const books1 = await getAllBooks();
-  console.log(books1.title, "books");
+  // console.log(books1.title, "books");
 
   const books = books1.slice(0, 4);
 
