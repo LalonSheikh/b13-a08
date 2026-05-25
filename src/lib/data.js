@@ -10,9 +10,17 @@
 
 //   return data;
 // }
-export async function getAllBooks() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+// export async function getAllBooks() {
+//   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-  const res = await fetch(new URL("/books.json", baseUrl));
-  return res.json();
+//   const res = await fetch(new URL("/books.json", baseUrl));
+//   return res.json();
+// }
+import fs from "fs";
+import path from "path";
+
+export async function getAllBooks() {
+  const filePath = path.join(process.cwd(), "public", "books.json");
+  const fileContents = fs.readFileSync(filePath, "utf-8");
+  return JSON.parse(fileContents);
 }
