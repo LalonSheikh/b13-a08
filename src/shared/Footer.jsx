@@ -62,8 +62,8 @@ const Footer = () => {
           </h3>
 
           <div className="space-y-2 text-gray-300">
-            <p>Email: support@bookhaven.com</p>
-            <p>Phone: +880 1234-567890</p>
+            <p>Email: abusalekmdlalonsheikh@gmail.com</p>
+            <p>Phone: +880 01728502644</p>
             <p>Location: Dinajpur, Rongpur, Bangladesh</p>
           </div>
 
