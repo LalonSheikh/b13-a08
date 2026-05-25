@@ -1,31 +1,43 @@
+import Link from "next/link";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
-import { redirect } from "next/navigation";
+import Image from "next/image";
 
-export default async function MyProfile() {
-  const headerStore = await headers(); // ✅ FIX HERE
-
+const MyProfilePage = async () => {
   const session = await auth.api.getSession({
-    headers: {
-      cookie: headerStore.get("cookie") || "",
-    },
+    headers: await headers(),
   });
 
-  if (!session) {
-    redirect("/login");
-  }
-
-  const user = session.user;
+  const user = session?.user;
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold">My Profile</h1>
+    <div className="flex justify-center items-center ">
+      <div className="container mx-auto p-6 max-w-md">
+        <h1 className="text-3xl font-bold mb-4">My Profile</h1>
+        <div className="space-y-2">
+          <Image
+            src={user?.image}
+            alt="Profile preview"
+            width={300}
+            height={200}
+            unoptimized // ✅ bypasses domain whitelist for dynamic URLs
+            className="rounded-4xl object-cover"
+          />
 
-      <div className="mt-4 space-y-2">
-        <p><b>Name:</b> {user.name}</p>
-        <p><b>Email:</b> {user.email}</p>
-        <p><b>ID:</b> {user.id}</p>
-      </div>
+          <p className="text-xl">{user?.name}</p>
+          <p className="text-gray-500">{user?.email}</p>
+        </div>
+
+        {/* ✅ Update button */}
+        <Link
+          href="/myprofile/update"
+          className="btn bg-orange-500 pt-2 mt-6 inline-block"
+        >
+          Update Information
+        </Link>
+      </div>{" "}
     </div>
   );
-}
+};
+
+export default MyProfilePage;

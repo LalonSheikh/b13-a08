@@ -1,3 +1,4 @@
+import BorrowButton from "@/components/BorrowButton";
 import Image from "next/image";
 
 const BookDetailsPage = async ({ params }) => {
@@ -6,6 +7,9 @@ const BookDetailsPage = async ({ params }) => {
   const res = await fetch(`http://localhost:3000/api/books/${id}`, {
     cache: "no-store",
   });
+if (!res.ok) {
+  throw new Error(`Failed to fetch book: ${res.status}`);
+}
 
   const book = await res.json();
 
@@ -35,7 +39,7 @@ const BookDetailsPage = async ({ params }) => {
           <div className=" text-green-600">
             {book.available_quantity} copies left
           </div>
-          <button className="btn btn-primary">Borrow This Book</button>
+           <BorrowButton bookId={book.id} />
         </div>
       </div>
     </div>

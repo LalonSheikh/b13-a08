@@ -69,13 +69,14 @@ const Navbar = () => {
             <div className="flex items-center gap-3">
               <h2>Hello! {user.name}</h2>
 
-              {/* <Image
-                src={user?.image || userAvatar}
-                alt="user avatar"
-                width={60}
-                height={60}
-                className="rounded-full"
-              /> */}
+              <Image
+                src={user?.image}
+                alt="."
+                width={40}
+                height={30}
+                unoptimized // ✅ bypasses domain whitelist for dynamic URLs
+                className="rounded-4xl object-cover"
+              />
 
               <Link
                 className="btn bg-orange-500 hover:bg-orange-300"
