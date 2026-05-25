@@ -79,8 +79,8 @@ const Navbar = () => {
 
               <Link
                 className="btn bg-orange-500 hover:bg-orange-300"
-                href={"/logout"}
-                onClick={async()=>await authClient.signOut()}
+                href={"/login"}
+                onClick={async () => await authClient.signOut()}
               >
                 Logout
               </Link>

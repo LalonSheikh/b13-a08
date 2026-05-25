@@ -1,8 +1,9 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 
 const RegisterPage = () => {
   const {
@@ -11,6 +12,13 @@ const RegisterPage = () => {
     watch,
     formState: { errors },
   } = useForm();
+  const [isShowPassword, setIsShowPassword] = useState(false);
+   const handleGoogleSignIn = async () => {
+      const data = await authClient.signIn.social({
+        provider: "google",
+      });
+      console.log(data, "data");
+    };
 
   const handleRegister = async (data) => {
     const { name, photo, email, password } = data;
@@ -84,16 +92,23 @@ const RegisterPage = () => {
               <span className="text-red-500">{errors.email.message}</span>
             )}
           </fieldset>
-          <fieldset className="fieldset">
+          <fieldset className="fieldset relative">
             <legend className="fieldset-legend">Password</legend>
             <input
-              type="password"
+              type={isShowPassword ? "text" : "password"}
               {...register("password", {
                 required: "Password Field is required",
               })}
               className="input focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Type Your Password..."
             />
+            <span
+              className="absolute right-4 top-4"
+              onClick={() => setIsShowPassword(!isShowPassword)}
+            >
+              {" "}
+              {isShowPassword ? <FaEye></FaEye> : <FaEyeSlash />}
+            </span>
             {errors.password && (
               <span className="text-red-500">{errors.password.message}</span>
             )}
@@ -102,12 +117,20 @@ const RegisterPage = () => {
             Register
           </button>
         </form>
-        <p className="mt-6">
+
+        <div className="flex flex-col gap-2">
+          <button onClick={handleGoogleSignIn} className="btn border-blue-500 text-blue-500">
+            {" "}
+            <FaGoogle /> Login with google
+          </button>
+        </div>
+        <p className="text-sm">
           If your have an account?{" "}
           <Link className="text-orange-300" href={"/login"}>
             Login
           </Link>{" "}
         </p>
+       
       </div>
     </div>
   );
