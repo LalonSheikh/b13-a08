@@ -3,6 +3,7 @@ import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { BsEyeSlash } from "react-icons/bs";
 import { FaEye, FaGoogle } from "react-icons/fa";
 
@@ -26,6 +27,12 @@ const LoginPage = () => {
     });
     
     // console.log(res, error);
+    if (error) {
+      toast.error(error.message);
+    }
+    if (res) {
+      toast.success("Signin Successful");
+    }
   };
   // console.log(watch("email"), "errors");
   // console.log(watch("password"));

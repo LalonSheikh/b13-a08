@@ -3,6 +3,7 @@ import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 
 const RegisterPage = () => {
@@ -36,10 +37,10 @@ const RegisterPage = () => {
     console.log("SUCCESS:", res);
     console.log("ERROR:", error);
     if (error) {
-      alert(error.message);
+      toast.error(error.message);
     }
     if (res) {
-      alert("Signup Successful");
+    toast.success("Signup Successful");
     }
   };
   return (
