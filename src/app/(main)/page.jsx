@@ -12,7 +12,7 @@ const HomePageBooks = async () => {
   return (
     <div className=" gap-4 container mx-auto my-[60px]">
       <h2 className="font-bold text-2xl"> Featured Books</h2>
-      <div className="space-y-4 mt-6 grid grid-cols-4">
+      <div className="space-y-4 mt-6 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {books.length > 0 ? (
           books.map((n) => {
             return (
