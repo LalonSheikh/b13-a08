@@ -14,12 +14,12 @@ const RegisterPage = () => {
     formState: { errors },
   } = useForm();
   const [isShowPassword, setIsShowPassword] = useState(false);
-   const handleGoogleSignIn = async () => {
-      const data = await authClient.signIn.social({
-        provider: "google",
-      });
-      // console.log(data, "data");
-    };
+  const handleGoogleSignIn = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+    // console.log(data, "data");
+  };
 
   const handleRegister = async (data) => {
     const { name, photo, email, password } = data;
@@ -40,7 +40,7 @@ const RegisterPage = () => {
       toast.error(error.message);
     }
     if (res) {
-    toast.success("Signup Successful");
+      toast.success("Signup Successful");
     }
   };
   return (
@@ -120,7 +120,10 @@ const RegisterPage = () => {
         </form>
 
         <div className="flex flex-col gap-2">
-          <button onClick={handleGoogleSignIn} className="btn border-blue-500 text-blue-500">
+          <button
+            onClick={handleGoogleSignIn}
+            className="btn border-blue-500 text-blue-500"
+          >
             {" "}
             <FaGoogle /> Login with google
           </button>
@@ -131,7 +134,6 @@ const RegisterPage = () => {
             Login
           </Link>{" "}
         </p>
-       
       </div>
     </div>
   );
