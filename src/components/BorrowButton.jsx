@@ -24,7 +24,7 @@ const BorrowButton = ({ bookId }) => {
   return (
     <button
       onClick={handleBorrow}
-      className="btn btn-primary cursor-pointer"
+      className="btn bg-orange-500 cursor-pointer"
       disabled={isPending}
     >
       {isPending ? "Loading..." : "Borrow This Book"}
