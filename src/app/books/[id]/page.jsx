@@ -4,9 +4,9 @@ import Image from "next/image";
 const BookDetailsPage = async ({ params }) => {
   const { id } = await params;
 
-  const res = await fetch(`http://localhost:3000/api/books/${id}`, {
-    cache: "no-store",
-  });
+ const res = await fetch(`${process.env.BETTER_AUTH_URL}/api/books/${id}`, {
+  cache: "no-store",
+});
 if (!res.ok) {
   throw new Error(`Failed to fetch book: ${res.status}`);
 }
